@@ -12,12 +12,11 @@ Bekzat (me) — Welcome Page and Contact Page
 1. Project Topic:
 Cloudly — an online perfume shop where users can browse, explore, and purchase various fragrances.
 
-2. Overview
+2. Overview: 
 This project is a multi-page web application designed to present a modern perfume store experience.
 It includes dynamic product pages, a user profile and authorization system, and aesthetic visuals powered by the Pexels API.
 
-3. Technologies Used
-
+3. Technologies Used:
 Frontend: HTML, CSS, JavaScript
 
 API: Pexels API
