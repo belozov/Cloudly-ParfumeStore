@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="DarkMode.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+
+<div class="top-bar bg-dark text-white text-center py-2">
+    <a href="#About" class="text-white mx-2 text -decoration-none" onclick="location.href='#About'">About the company</a>
+    <a href="brands.html" class="text-white mx-2 text-decoration-none">Brands</a>
+    <a href="contacts.html" class="text-white mx-2 text-decoration-none">Contacts</a>
+    <a href="#FaQ" class="text-white mx-2 text-decoration-none" onclick="location.href='#FaQ'">FAQ</a>
+</div>
+
+<header class="header container-fluid d-flex align-items-center justify-content-between py-3 px-4">
+    <div class="logo">Cloud<span>ly</span></div>
+    <div class="search-bar flex-grow-1 mx-3 position-relative">
+        <label>
+            <input type="text" id="searchInput" class="form-control" placeholder="Search by product">
+        </label>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+    <div class="icons d-flex align-items-center gap-3">
+        <span><a href="Profile.html" class="link">👤</a></span>
+        <span><a href="Regist.html" class="link">Login</a></span>
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm"></button>
+    </div>
+</header>
+
+
+<section class="banner text-center py-4">
+    <img src="https://lojacoty.vteximg.com.br/arquivos/GUCCI_1920x503.png?v=638525912361970000" alt="banner" class="gucci img-fluid">
+</section>
+
+<main class="top-offers text-center py-4">
+    <div class="title">OUR TOP OFFERS</div>
+
+    <div class="tabs mb-3">
+    </div>
+
+    <div class="grid row justify-content-center g-4 px-3" id="productGrid">
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item" data-name="chanel coco mademoiselle" data-category="womens">
+            <img src="https://the-fragrance-shop.imgix.net/products/29532---new.jpg" alt="chanel" class="img-fluid rounded mb-2">
+            <div class="name">CHANEL COCO MADEMOISELLE</div>
+            <div class="subtitle">Eau de Parfum</div>
+            <div class="price">From 16.000₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 45.000₸ Non-Member</button>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item" data-name="cosmic kylie jenner" data-category="womens">
+            <img src="https://the-fragrance-shop.imgix.net/products/70608.jpg" alt="Kylie" class="img-fluid rounded mb-2">
+            <div class="name">COSMIC KYLIE JENNER</div>
+            <div class="subtitle">2.0 Eau de Parfum</div>
+            <div class="price">From 45.000₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 57.000₸ Non-Member</button>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item" data-name="r.e.m. ariana grande" data-category="womens">
+            <img src="https://the-fragrance-shop.imgix.net/products/70537.jpg" alt="ariana" class="img-fluid rounded mb-2">
+            <div class="name">R.E.M. ARIANA GRANDE</div>
+            <div class="subtitle">Cherry Eclipse Eau de Parfum</div>
+            <div class="price">From 36.000₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 45.000₸ Non-Member</button>
+        </div>
+
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item" data-name="miss dior" data-category="womens">
+            <img src="https://the-fragrance-shop.imgix.net/products/71909.jpg" alt="dior" class="img-fluid rounded mb-2">
+            <div class="name">MISS DIOR</div>
+            <div class="subtitle">Eau de Parfum</div>
+            <div class="price">From 80.000 ₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 100.000₸ Non-Member</button>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item d-none" data-name="whipped pleasure lattafa" data-category="womens">
+            <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.114397.2x.avif" alt="dior" class="img-fluid rounded mb-2">
+            <div class="name">Whipped Pleasure Lattafa</div>
+            <div class="subtitle">Eau de Parfum</div>
+            <div class="price">From 65.000 ₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 85.000₸ Non-Member</button>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item d-none" data-name="fantasy britney spears" data-category="womens">
+            <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.600.2x.avif" alt="dior" class="img-fluid rounded mb-2">
+            <div class="name">Fantasy Britney Spears</div>
+            <div class="subtitle">Eau de Parfum</div>
+            <div class="price">From 65.000 ₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 85.000₸ Non-Member</button>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item d-none" data-name="Classique Eau de Parfum Jean Paul Gaultier " data-category="womens">
+            <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.8304.2x.avif" alt="dior" class="img-fluid rounded mb-2">
+            <div class="name">Classique Eau de Parfum Jean Paul Gaultier </div>
+            <div class="subtitle">Eau de Parfum</div>
+            <div class="price">From 100.000 ₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 125.000₸ Non-Member</button>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6 product-item d-none" data-name="Intense Roses Musk Montale" data-category="womens">
+            <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.31893.2x.avif" alt="dior" class="img-fluid rounded mb-2">
+            <div class="name">Intense Roses Musk Montale</div>
+            <div class="subtitle">Eau de Parfum</div>
+            <div class="price">From 79.000 ₸ Member Price</div>
+            <button class="btn btn-outline-dark btn-sm">From 95.000₸ Non-Member</button>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button id="loadMoreBtn" class="btn btn-dark px-4">Load More</button>
+    </div>
+
+</main>
+
+<section class="faq container my-5" id="FaQ">
+    <h2 class="text-center mb-4">Frequently asked questions</h2>
+    <div class="accordion-item">
+        <button class="accordion-btn">How long does delivery take?</button>
+        <div class="accordion-content">
+            <p>Delivery usually takes 3–5 business days depending on your location.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-btn">How much does delivery cost?</button>
+        <div class="accordion-content">
+            <p>Delivery costs depend on your location.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-btn">Do you offer international shipping?</button>
+        <div class="accordion-content">
+            <p>Currently, we ship only within Kazakhstan and nearby countries</p>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="myscript.js"></script>
+
+<footer class="footer bg-light text-center py-4">
+    <div class="about mx-auto px-3 mb-3" id="About">
+        <strong>About Cloudly</strong><br>
+        Welcome to <b>Cloudly</b> — your destination for original, high-quality perfumes, aftershaves, and colognes.
+        We feature iconic brands such as <b>Dior</b>, <b>Versace</b>, <b>Rabanne</b>, and <b>Gucci</b>, offering fragrances that reflect every style and story.
+        <br><br>
+        At Cloudly, we believe that scent is more than a product — it’s emotion, memory, and identity.
+        Our goal is to to help you find your signature fragrance and enjoy exclusive member prices, special collections, and seasonal offers.
+
+        <p class="copyright mb-2">
+            © 2025 <b>Cloudly</b>. Team Members: Bekzat, Akhmet, Sultan, Yerulan
+        </p>
+
+        <div class="follow mt-3 fw-bold">Follow & Share on</div>
+        <div class="social-icons d-flex justify-content-center gap-4 mt-2">
+            <div class="icon"><span>📸</span><p>Instagram</p></div>
+            <div class="icon"><span>👍</span><p>Facebook</p></div>
+            <div class="icon"><span>🐦</span><p>Twitter</p></div>
+            <div class="icon"><span>🎵</span><p>TikTok</p></div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

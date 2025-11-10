@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudly Store</title>
+    <link rel="stylesheet" href="stylebrands.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="progress-container">
+    <div id="progress-bar"></div>
+</div>
+
+<div class="top-bar bg-dark text-white text-center py-2">
+    <a href="#"
+       class="text-white mx-2 text-decoration-none"
+       onclick="alert('Cloudly Perfume Boutique — a store of authentic niche & designer fragrances. Original products, gift sets, discounts. Open daily 10:00–20:00.');">
+        About the company
+    </a>
+    <a href="index.html" class="text-white mx-2 text-decoration-none">Home</a>
+    <a href="brands.html" class="text-white mx-2 text-decoration-none">Brands</a>
+    <a href="contacts.html" class="text-white mx-2 text-decoration-none">Contacts</a>
+    <a href="Profile.html" class="text-white mx-2 text-decoration-none">Profile</a>
+    <a href="#" class="text-white mx-2 text-decoration-none" id="faqLink">FAQ</a>
+</div>
+
+<header class="header container-fluid d-flex align-items-center justify-content-between py-3 px-4">
+    <div class="logo"><a href="index.html" class="logoa">Cloud<span>ly</span></a></div>
+    <button id="themeToggle" class="btn btn-outline-secondary btn-sm"></button>
+</header>
+<div class="top-banner">
+    <img class="lazy" data-src="img/Gucciposter.jpg" alt="Perfume Banner">
+</div>
+<section class="container my-5">
+    <div class="row g-4">
+        <div class="col-lg-6 col-md-12">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+                <h3 class="mb-3">Gucci Fragrances</h3>
+                <p>Gucci is an Italian luxury brand, known not only for fashion but also for its iconic perfumes.
+                    Their fragrances combine elegance, modernity, and timeless style.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+                <h3 class="mb-3">Why Choose Us</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2">✔ 100% original brands</li>
+                    <li class="mb-2">✔ Fast delivery nationwide</li>
+                    <li>✔ Free samples with every order</li>
+                </ul>
+                <button class="btn btn-outline-secondary mt-3" onclick="alert('We value quality and authenticity!')">Explore</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5">
+    <div class="row g-4 text-center">
+        <div class="col-lg-4 col-md-6">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+                <h4 class="mb-2">New Arrivals</h4>
+                <button class="btn btn-outline-dark btn-sm mt-2" onclick="window.location.href='GucciGuilty.html'">Shop Now</button>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+                <h4 class="mb-2">Top Sellers</h4>
+                <button class="btn btn-outline-dark btn-sm mt-2"  onclick="window.location.href='brands.html#gallery'">View List</button>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+                <h4 class="mb-2">Exclusive Offers</h4>
+                <button class="btn btn-outline-dark btn-sm mt-2" onclick="showOffer()">Get Offer</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main>
+    <section class="popular-perfumes">
+        <h3>Popular Gucci Perfumes</h3>
+        <div class="perfume-card">
+            <img class="lazy" data-src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqpNJLzTEk1JPLTO6OLNE_VrIvT5vEPzpFydyA6L56ak41_BYA5_WvFBlv-UhTqFdqvQL5foDXVvFcyXQyI1_CP6Ah-D4lTraGZS-kr3p0zKCehBBVTp_Yc0ydBariw-VP&usqp=CAc" alt="Gucci Bloom" class="imgb">
+            <h4>Gucci Bloom</h4>
+            <p>A floral fragrance with jasmine, tuberose, and Rangoon creeper.</p>
+        </div>
+        <a href="GucciGuilty.html" class="perfume-link">
+        <div class="perfume-card">
+            <img class="lazy" data-src="data:image/jpeg;base64,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" alt="Gucci Guilty" class="imgb">
+            <h4>Gucci Guilty</h4>
+            <p>A bold scent with pink pepper, lilac, and amber.</p>
+        </div>
+        </a>
+        <div class="perfume-card">
+            <img class="lazy" data-src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-boxJTX5uRXSg2SJoKDGDXRz3ivtyel6yjLkWlP94xbKdYbUfCs_qtjLhz2c8-gzH0557HmUpEWhyFCyvaOxPiB95lNfigEUjnogHpq6xoKRME_VgqTcE9qOLLnxGSvXHfA&usqp=CAc" alt="Gucci Flora" class="imgb">
+            <h4>Gucci Flora</h4>
+            <p>A romantic floral fragrance with peony, citrus, and sandalwood.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content" id="About">
+        <div>
+            <h3>Cloudly Store</h3>
+            <p>Your perfect choice for unique scents that highlight individuality.</p>
+            <button id="showTimeBtn" class="btn btn-primary">Show Current Time</button>
+        </div>
+        <div>
+            <h4>Contacts</h4>
+            <p>📍 Almaty, Aromatnaya St., 123</p>
+            <p>📞 +7 (777) 987-65-43</p>
+            <p>✉ support@Cloudly.kz</p>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <p><a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Telegram</a></p>
+        </div>
+    </div>
+    <p class="copyright">© 2025 Cloudly. Team Members: Bekzat, Akhmet, Sultan, Yerulan</p>
+</footer>
+
+<div id="faqPopup" class="faq-popup">
+    <div class="faq-content">
+        <span class="close-btn">&times;</span>
+        <h3>Frequently Asked Questions</h3>
+        <p><strong>Q:</strong> What is Cloudly Store?</p>
+        <p><strong>A:</strong> Cloudly Store is an online perfume shop offering exclusive fragrances.</p>
+        <p><strong>Q:</strong> Do you offer delivery?</p>
+        <p><strong>A:</strong> Yes, we provide fast worldwide delivery.</p>
+        <p><strong>Q:</strong> Can I return a product?</p>
+        <p><strong>A:</strong> Yes, returns are accepted within 14 days of purchase.</p>
+    </div>
+</div>
+
+
+<script>
+    function showOffer() {
+        alert("🎁 Special Deal! Get 10% off your next order with code GUCCI10.");
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="scriptbrands.js"></script>
+<script src="DarkMode.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login and password</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Regist.css">
+</head>
+<body>
+<main>
+    <div class="wrapper">
+        <!-- Login Form -->
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox">Remember me</label>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p>Don't have an account? <span id="showRegister">Register</span></p>
+        </form>
+
+        <!-- Register Form -->
+        <form id="registerForm" style="display:none;">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" id="registerUsername" placeholder="Username" required>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <p>Already have an account? <span id="showLogin">Login</span></p>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <div class="logo">Cloud<span>ly</span></div>
+    <p>© 2025 Cloudly Store</p>
+    <p>Team Members: Bekzat, Akhmet, Sultan, Yerulan</p>
+</footer>
+<script src="Reg.js"></script>
+</body>
+</html>
