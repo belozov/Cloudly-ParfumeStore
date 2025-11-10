@@ -1,5 +1,5 @@
-💐 Cloudly —  Parfume Store Project
-👥 Team Members & Responsibilities
+                                                                                                   Cloudly —  Parfume Store Project
+Team Members & Responsibilities
 
 Akhmet — Brands Page, Catalog
 
